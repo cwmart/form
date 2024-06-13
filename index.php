@@ -12,16 +12,14 @@
 
   <h1>index.php</h1>
 
-  <form action="">
+  <form action="" method="">
+      <input type="text" name="login" placeholder="Enter login" required />
+      <input type="password" name="pass" placeholder="Enter pass" required />
+      <input type="email" name="email" placeholder="Enter email" required />
+      <input type="tel" name="tel" placeholder="Enter phone number" />
 
-    <input type="text" name="login">
-    <input type="password" name="pass">
-    <input type="email" name="email">
-    <input type="tel" name="tel">
-
-    <input type="submit" value="Send data">
-
-  </form>
+      <input type="submit" value="Send data" />
+    </form>
 
   <a href="./index.html">index.html</a>
 </body>
