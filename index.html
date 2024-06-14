@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="html, course, css, tags" />
     <meta name="description" content="Это базовый курс по html" />
-    <title>Form</title>
+    <title>index.html</title>
 
     <link rel="stylesheet" href="./style.css" />
 
@@ -14,40 +14,41 @@
       rel="stylesheet"
       type="text/css"
     />
+
+    <script src="./test.js"></script>
   </head>
   <body>
+    <form action="" method="post" id="form" autocomplete="on">
+      <h2>Form header</h2>
 
-    <form action="/" method="post" id="form">
       <div>
         <label>
           Name:
-          <input type="text" name="name" placeholder="Enter name" required>
+          <input type="text" name="name" placeholder="Enter name" required />
         </label>
       </div>
+
       <div>
         <label>
           Age:
-          <input type="number" name="age" placeholder="Enter age">
+          <input type="number" name="age" placeholder="Enter age" />
         </label>
       </div>
+
       <div>
         <label>
           Email:
           <input type="email" name="email" placeholder="Enter email" required />
         </label>
       </div>
+
       <div>
         <label>
           Phone number:
           <input type="tel" name="tel" placeholder="Enter phone number" />
         </label>
       </div>
-      <div>
-        <label>
-          Confirm terms of service:
-          <input type="checkbox" name="terms" checked>
-        </label>
-      </div>
+
       <div>
         Plan
         <select name="plan">
@@ -56,11 +57,27 @@
           <option value="pro">pro</option>
         </select>
       </div>
+
+      <div>
+        <label for="textarea">Enter comments:</label>
+        <textarea name="" id="textarea" rows="10"></textarea>
+      </div>
+
+      <div>
+        <label>
+          Confirm your data:
+          <input type="checkbox" name="terms" />
+        </label>
+      </div>
+
+      <div>
+        <button type="submit">Reject</button>
+      </div>
+
       <div>
         <button type="submit">Submit</button>
       </div>
     </form>
-
 
     <script src="./test.js"></script>
   </body>
